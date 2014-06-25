@@ -1,0 +1,20 @@
+{
+    "name": "Android Offline Doc",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Android Offline Doc",
+    "offline_enabled": true,
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Android Offline Doc"
+    },
+    "permissions": [
+        "<all_urls>",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking"
+    ]
+}
