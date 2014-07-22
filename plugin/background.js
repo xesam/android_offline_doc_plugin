@@ -15,6 +15,7 @@ chrome.tabs.onCreated.addListener(function(tab){
     if(tab.url){
         update_hash(tab.id, tab.url);
     }
+    chrome.browserAction.setBadgeText({text:  offline_eanable_bool ? ON_STR : ''});
 });
 
 function tab_update_listener(tabId, changeInfo, tab) {
